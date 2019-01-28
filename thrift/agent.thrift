@@ -21,6 +21,6 @@ namespace php Jaeger.Thrift.Agent
 namespace netcore Jaeger.Thrift.Agent
 
 service Agent {
-    oneway void emitZipkinBatch(1: list<zipkincore.Span> spans)
-    oneway void emitBatch(1: jaeger.Batch batch)
+    void emitZipkinBatch(1: list<zipkincore.Span> spans)
+    void emitBatch(1: jaeger.Batch batch)
 }
